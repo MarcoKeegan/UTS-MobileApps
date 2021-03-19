@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MUSIC PLAYER"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonProfil"
+        android:text="Profile"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonLogin"
+        android:text="Log In"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+</LinearLayout>

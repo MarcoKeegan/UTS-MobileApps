@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".ListLagu">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Layout_top_btn"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="List Lagu"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="Profile"
+            android:id="@+id/profilebtn"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="0dp"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="Log Out"
+            android:id="@+id/LogOut"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"/>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tosc"
+        android:id="@+id/tab_layout"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorGravity="center"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorHeight="40dp"
+        app:tabIndicatorColor="@color/black"
+        app:tabBackground="@drawable/tab_indicator"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"/>
+
+</LinearLayout>
